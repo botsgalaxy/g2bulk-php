@@ -1,0 +1,25 @@
+{
+    "name": "g2bulk/g2bulk-php",
+    "description": "PHP SDK for the G2Bulk reseller API: digital products, game top-ups, orders and signed webhooks.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["g2bulk", "api", "sdk", "reseller", "top-up", "gift cards", "webhooks"],
+    "homepage": "https://api.g2bulk.com",
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "G2Bulk\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "php tests/run.php",
+        "test:unit": "php tests/run.php unit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
